@@ -20,5 +20,6 @@ cp template.c ${filename}
 ## add item to README
 readme="README.md"
 echo "* [${2}](${filename})" >> $readme
-
-vi ${filename}
+git add $filename
+vi $filename
+gcc $filename -o "test"
