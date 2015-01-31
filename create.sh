@@ -12,7 +12,7 @@ if [ ! -d "$1" ]; then
     mkdir ${1}
 fi
 
-filename="${1}/main.c"
+filename="${1}/${1}.c"
 
 ## make file from template code
 cp template.c ${filename}
